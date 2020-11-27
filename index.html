@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-<link rel="stylesheet" href="./Style.css" />
-
+<link rel="stylesheet" href="./index.css" />
 
 </head>
 <body>
@@ -15,8 +13,13 @@
 
 <h1 id="calculator" >CALCULATOR </h1>
 
+<!-- <span></span> -->
+<!-- <input type="number" id="type" cl  ass="input" placeholder="Value 1" /> -->
+<!--  -->
+<!-- <br/> -->
+
 <span></span>
-<input type="number" id="type2" class="input" placeholder="..." />
+<input type="" autofocus id="type2" class="input"  placeholder="" />
 
 <br/>
 
@@ -28,35 +31,52 @@
 <br/>
 
 <div id="button" >
-<button  class="talha" >x</button>
-<button  onclick="DIVIDE()" class="talha" >/</button>
-<button  class="talha" >+</button>
-<button class="talha" > - </button>
-<button  class="button1" > 7 </button>
-<button  class="button1" > 8 </button>
-<button  class="button1" > 9 </button>
+<button  class="talha" onclick="document.getElementById('type2').value += '*' " >x</button>
+<button  onclick="document.getElementById('type2').value += '/' " class="talha" >/</button>
+<button  class="talha" onclick="document.getElementById('type2').value += '+' " >+</button>
+<button class="talha" onclick="document.getElementById('type2').value += '-' " > - </button>
+<button  class="button1" onclick="document.getElementById('type2').value += '7' " > 7 </button>
+<button  class="button1" onclick="document.getElementById('type2').value += '8' " > 8 </button>
+<button  class="button1" onclick="document.getElementById('type2').value += '9' " > 9 </button>
 <button  onclick="CLEAR()" id="Talha" class="talha" >C</button>
-<button class="button1"  > 4 </button>
-<button class="button1"  > 5 </button>
-<button class="button1"  > 6 </button>
-<button class="button1"  > 0 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '4' " > 4 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '5' " > 5 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '6' " > 6 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '0' " > 0 </button>
 <button class="button1" onclick="document.getElementById('type2').value += '1' "  > 1 </button>
 <button class="button1" onclick="document.getElementById('type2').value += '2' " > 2 </button>
-<button class="button1"  > 3 </button>
-<button class="button1"> . </button>
+<button class="button1" onclick="document.getElementById('type2').value += '3' " > 3 </button>
+<button class="button1" onclick="document.getElementById('type2').value += '.' " > . </button>
+<!-- <br/> -->
+<button id="button2" onclick="Calculate()"  > = </button>
+<button id="Delete" onclick="dlt()" > Del </button>
+<div id="last" >CREATE BY <br/> TALHA KAMRAN</div>
+</div>
+<!-- 
+<button class="talha" > 9 </button>
+<button class="talha" > 8 </button>
+<button class="talha" > 7 </button>
+<br/>
+<button  class="talha"> 6 </button>
+<button  class="talha"> 5 </button>
+<button  class="talha"> 4 </button>
+<br/>
+<button  class="talha"> 3 </button>
+<button  class="talha"> 2 </button>
+<button  class="talha"> 1 </button>
+<br/>
+<button> 0 </button> -->
 
-<button id="button2"  > = </button>
-
-<div id="last" >Create By <br/> Aqib Memon</div>
 
 </div>
 
-</div>
 
 
 
-<script src="./App.js" >
+<script src="./index.js" >
+
 </script>
+
 
 </body>
 </html>
